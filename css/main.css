@@ -1,0 +1,42 @@
+body {
+	text-align: center;
+}
+
+.box {
+	display: inline-block;
+	height: 100px;
+	width: 100%
+}
+
+/*I thought it would be easy if I switched the colors with the background color*/
+.black {
+	background-color: orange;
+}
+
+/*Black and orange; Giants colors!*/
+.orange {
+	background-color: black;
+}
+
+.blue {
+	background-color: gold;
+}
+
+.gold {
+	background-color: blue;
+}
+
+/*My first time using media queries, I have to get to know them and love them*/
+@media (max-width: 600px) {
+	.orange,.blue {
+		display:none;
+	}
+}
+/*Poof! It disappears!*/
+
+@media (min-width: 1000px) {
+	.black,.orange,.blue,.gold {
+		width: 100%
+	}
+}
+/*Bam! It reappears!*/
